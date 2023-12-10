@@ -1,0 +1,5 @@
+﻿  Application.cpp
+C:\Users\wwwqq\Desktop\Sem6_Jan 2022\Game Engine\week4\gameengine_base\gameengine_base\Application.cpp(34,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Window.cpp
+  Generating Code...
+  gameengine_base.vcxproj -> C:\Users\wwwqq\Desktop\Sem6_Jan 2022\Game Engine\week4\gameengine_base\Debug\gameengine_base.exe

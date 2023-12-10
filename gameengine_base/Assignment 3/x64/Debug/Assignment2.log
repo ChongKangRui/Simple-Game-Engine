@@ -1,0 +1,12 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Assignment1.vcxproj, gameengine_base.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  GameScene.cpp
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\GameScene.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\GameScene.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\InputSystem.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\InputSystem.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  SimpleSpriteRenderer.cpp
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\SimpleSpriteRenderer.cpp(11,25): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\SimpleSpriteRenderer.cpp(25,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Assignment2\SimpleSpriteRenderer.cpp(26,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  Assignment2.vcxproj -> C:\Users\SCSM11\Desktop\Sem6_Jan 2022\Game Engine\Week10Try\Assignment2\gameengine_base\Debug\Assignment2.exe
