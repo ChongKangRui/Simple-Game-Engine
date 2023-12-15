@@ -100,6 +100,7 @@ void GameEngine::Application::Run() {
 	unsigned int splashId = 0;
 	unsigned int gameSceneId = 1;
 	unsigned int loseSceneId = 2;
+
 	sceneManager.addScene<Showcase::SplashScene>(splashId);
 	sceneManager.addScene<Showcase::GameScene>(gameSceneId);
 	sceneManager.addScene<Showcase::LoseScene>(loseSceneId);

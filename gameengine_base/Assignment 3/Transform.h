@@ -42,6 +42,8 @@ namespace GameEngine {
 		void scale(float x, float y, float z);
 
 		
+
+
 	};
 };
 

@@ -72,6 +72,6 @@ bool CheckIFGameObjectShouldBeRemove(GameEngine::GameObject* go) {
 void GameEngine::GameObjectCollection::processRemovals() {
 	//find all game object that is removal
 	auto it = std::remove_if(gameObject.begin(), gameObject.end(), CheckIFGameObjectShouldBeRemove);
-
+	
 	gameObject.erase(it, gameObject.end());
 }

@@ -2,6 +2,7 @@
 #include "Scene.h"
 #include <unordered_map>
 // include unordered map
+#include <string>
 
 namespace GameEngine {
 	//! This documentation will briefing the usage of %GameObject. %GameObject is a class that can use to create a game object
@@ -72,34 +73,7 @@ namespace GameEngine {
 		}
 
 		//! This function is use to load scene from list.
-	/*!
-	* Sample Usage:
-	*\code{.cpp}
-	*#include "SceneStateMachine.h"
-	* //one of the ShowCase classes
-	*#include "GameScene.h"
-	*using namespace GameEngine;
-	*
-	*
-	*
-	*int main(){
-	*
-	* SceneStateMachine sceneManager;
-	*
-	* unsigned int gameSceneId = 0;
 
-
-	* sceneManager.addScene<Showcase::GameScene>(gameSceneId);
-	* 
-	* //SceemManager load scene according to the name of scene.
-	* //Therefore, derived scene will needed to return a name string.
-	* sceneManager.loadScene("GameScene");
-	*
-	* return 0;
-	* }
-	* \endcode
-	*
-	*/
 		void loadScene(const std::string scene);
 
 

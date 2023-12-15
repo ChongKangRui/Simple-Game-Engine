@@ -17,7 +17,7 @@ Meteorite::Meteorite(GameObject* go) : BaseComponent(go) {
 
 }
 Meteorite::~Meteorite(){
-
+	//Metro->erase(std::remove(Metro->begin(), Metro->end(), owner), Metro->end());
 }
 
 void Meteorite::update(float deltaTime) {
@@ -27,10 +27,20 @@ void Meteorite::update(float deltaTime) {
 		transform->rotate(transform->rotation.x, transform->rotation.y, transform->rotation.z + speed);
 	}
 	else {
+		RemoveFromMetroList();
 		owner->markForRemoval();
 	}
 
+
+	if (hp <= 0) {
+		RemoveFromMetroList();
+		owner->markForRemoval();
+	}
+	
+
+
 	if (!playerobj->shouldBeRemoved()) {
+
 		
 		auto sprite = owner->getComponent<SimpleSpriteRenderer>();
 
@@ -55,7 +65,11 @@ void Meteorite::update(float deltaTime) {
 			}
 		}
 
+		
+
 	}
+
+
 
 }
 
@@ -66,4 +80,29 @@ void  Meteorite::getCurrentWindowSize(int width, int height) {
 
 void  Meteorite::getPlayer(GameObject* player) {
 	playerobj = player;
+}
+
+void Showcase::Meteorite::MinusHP()
+{
+	hp--;
+}
+
+
+void Meteorite::SetMetroRef(std::vector<GameEngine::GameObject*>* metroCollection)
+{
+	Metro = metroCollection;
+}
+
+void Showcase::Meteorite::RemoveFromMetroList()
+{
+
+
+	auto itToRemove = std::find(Metro->begin(), Metro->end(), owner);
+
+	if (itToRemove != Metro->end()) {
+
+		Metro->erase(itToRemove, Metro->end());
+	}
+
+
 }

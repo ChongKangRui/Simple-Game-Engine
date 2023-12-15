@@ -3,6 +3,7 @@
 #include "GameObject.h"
 #include "Transform.h"
 
+
 namespace Showcase {
 	//! This documentation won't showcase the usage since this class purpose is for the showcase.
 	//! %Meteorite is a class that derived from BaseComponent. Therefore, thw upadte function that %Meteorite is using are mostly override function.
@@ -17,18 +18,22 @@ namespace Showcase {
 		void getCurrentWindowSize(int width, int height);
 		void getPlayer(GameEngine::GameObject* player);
 
-		
+		void MinusHP();
 
+		void SetMetroRef(std::vector<GameEngine::GameObject*>* metroCollection);
 	private:
 		GameEngine::Transform* transform;
 		GameEngine::GameObject* playerobj;
 
-		
 
 		int windowWidth;
 		int windowHeight;
 
+		int hp = 3;
 
+		std::vector<GameEngine::GameObject*>* Metro;
+
+		void RemoveFromMetroList();
 
 		float speed;
 	};
